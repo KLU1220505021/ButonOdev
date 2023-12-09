@@ -1,10 +1,12 @@
 ## Buton Uygulaması Ödevi
 
 ---
-Uygulamanın Calıştırılması
-\
-`$ cd src/ && javac Main.java && java Main`
----
+
+### Uygulamanın Calıştırılması
+
+```shell
+  $ cd src/ && javac Main.java && java Main
+```
 
 ### Nasıl Çalışıyor?
 
@@ -104,13 +106,11 @@ type User {
     full_name: String
 }
 
-
 type Notification {
     id: ID
     date: Date
     type: String
 }
-
 
 scalar Url
 scalar Date
@@ -143,28 +143,20 @@ mutation {
         }
     }
 }
-
 ```
 
 ### GraphQL Avantajları
 
-* GraphQL sorguları tek bir sorguda gerçekleştirilir. İstemci sorgusunda istediği verileri alır ve istemci sorgusu
+- GraphQL sorguları tek bir sorguda gerçekleştirilir. İstemci sorgusunda istediği verileri alır ve istemci sorgusu
   backend server tarafında tek bir sorguda gerçekleştirilir.
-* Eksiksiz ve kesinlik ile tanımlanmış veri tipleri istemci ile sunucu arasında sağlıklı iletişim kurulmasını sağlar.
-* GraphQL için oluşturulmuş açık kaynak kodlu birçok eklenti var olup bu eklentiler herhangi bir REST API tarafından
+- Eksiksiz ve kesinlik ile tanımlanmış veri tipleri istemci ile sunucu arasında sağlıklı iletişim kurulmasını sağlar.
+- GraphQL için oluşturulmuş açık kaynak kodlu birçok eklenti var olup bu eklentiler herhangi bir REST API tarafından
   gerçekleştirilemeyecek bir çok işlevi gerçekleştirebilir.
-* GraphQL projenin mimarisinden bağımsız olarak entegre edilebilmektedir.
+- GraphQL projenin mimarisinden bağımsız olarak entegre edilebilmektedir.
 
 ### GraphQL Dezavantajları
 
-* GraphQL veri sorgulama işlemlerinin yükünün büyük çoğunluğunu sunucu tarafına yüklemektedir.
-* REST API geliştiricileri için ek öğrenme yükü.
-* Önbellekleme GraphQL'de daha karmaşık bir işlemdir.
-* Geliştirici ek olarak işlevsel ve yürütülebilir bir GraphQL şeması oluşturma yükünü de sırtlamış olur.
-
-
-
-
-
-
-
+- GraphQL veri sorgulama işlemlerinin yükünün büyük çoğunluğunu sunucu tarafına yüklemektedir.
+- REST API geliştiricileri için ek öğrenme yükü.
+- Önbellekleme GraphQL'de daha karmaşık bir işlemdir.
+- Geliştirici ek olarak işlevsel ve yürütülebilir bir GraphQL şeması oluşturma yükünü de sırtlamış olur.
